@@ -1,10 +1,10 @@
 {% set provider= "Vault" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 {% set name = "terraform-provider-" + provider.lower() %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "759a2873c5290ea5f18c9e6ec8805203c7b6fb847b66c6ab2e0405c3b770001e" %}
+{% set sha256 = "3339c41783d00e648e66c8a56590736ffd6c684a1b0fef184496dd2cacfa3804" %}
 {% set sha256_win32 = "a4cf88fc1c9319595ac2c600f97183bdd6561bb9026d803f171455eeb8daf195" %}
 {% set sha256_win64 = "b55159b408f51ee0ec323e0c861f2e3c215bc1f127307842f78515eab002d617" %}
 
