@@ -1,10 +1,10 @@
 {% set provider = "Vault" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 {% set name = "terraform-provider-" + provider.lower() %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "3339c41783d00e648e66c8a56590736ffd6c684a1b0fef184496dd2cacfa3804" %}
+{% set sha256 = "47992887ab989be1363d78557575122d37a48b16905c7ab67a759607983f8ca0" %}
 {% set sha256_win64 = "4d349bff861f4c65660ffc59d5761d01f20895a9e99ff8517cb170f791f24e14" %}
 
 package:
@@ -20,7 +20,7 @@ source:
     sha256: {{ sha256_win64 }}  # [win64]
 
 build:
-  number: 1
+  number: 0
   script:
     - XCOPY src\github.com\terraform-providers\{{ name|lower }}\{{ x4_plugin }}.exe %LIBRARY_BIN%  # [win]
 
