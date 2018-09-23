@@ -3,6 +3,7 @@ export GOPATH=${SRC_DIR}
 
 # Build
 pushd "$GOPATH/src/github.com/terraform-providers/$PKG_NAME"
+make fmt
 make build
 make test
 
