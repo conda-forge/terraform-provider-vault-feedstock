@@ -3,8 +3,8 @@ export GOPATH=${SRC_DIR}
 
 # Build
 pushd "$GOPATH/src/github.com/terraform-providers/$PKG_NAME"
-make build
 make fmt
+make build
 make test
 
 # Install Binary into PREFIX/bin
