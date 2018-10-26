@@ -1,5 +1,5 @@
 {% set provider = "Vault" %}
-{% set version = "1.1.4" %}
+{% set version = "1.2.0" %}
 
 {% set name = "terraform-provider-" + provider.lower() %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
@@ -11,10 +11,10 @@ package:
 source:
   - folder: src/github.com/terraform-providers/{{ name|lower }}
     url: https://github.com/terraform-providers/{{ name }}/archive/v{{ version }}.tar.gz  # [not win]
-    sha256: fd8f7f13392eae01e55cd55247751b9c082e2566085d38945ea7febca378413f  # [not win]
+    sha256: 5232be90b59f0e0db0b82466dc26d1faff99e167a10c5a6b07d38ca9d7fdcdd6  # [not win]
 
     url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_amd64.zip  # [win64]
-    sha256: 5dd8080b26fcd61e2bd5c691613cf5b178217bb14179f50d2ff0a38ba6ac5e66  # [win64]
+    sha256: aa6eeba0d23b917b3e186de17004425a8761593248cffd4b5f76111bb692f183  # [win64]
 
 build:
   number: 0
