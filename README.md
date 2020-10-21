@@ -5,11 +5,13 @@ Home: https://www.terraform.io
 
 Package license: MPL-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/terraform-provider-vault-feedstock/blob/master/LICENSE.txt)
 
 Summary: The Terraform Vault provider
 
+Development: https://github.com/terraform-providers/terraform-provider-vault
 
+Documentation: https://www.terraform.io/docs/providers/vault/index.html
 
 Current build status
 ====================
